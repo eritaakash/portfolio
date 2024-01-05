@@ -11,15 +11,15 @@ const Contact = () => {
     const [form, setForm] = useState(false);
 
     const redirectUser =(e) => {
-        const target = e.target.innerText;
+        const target = e.target.id;
         switch(target) {
-            case '@eritaakash':
+            case 'linkedin':
                 window.open('https://www.linkedin.com/in/eritaakash/', '_blank');
                 break;
-            case '/eritaakash':
+            case 'github':
                 window.open('https://github.com/eritaakash', '_blank');
                 break;
-            case 'eritaakash':
+            case 'email':
                 window.open('https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRttNmKlNGrSndfPrnhSnKxbsLfDWrgTgbfmlQNRbmlDmJjbtwMCTnzKmQcnsmnVNhZBFRB', '_blank');
                 break;
             default:
@@ -40,10 +40,10 @@ const Contact = () => {
                             <h3>Contact Details</h3>
                             <p>Connect with me:</p>
 
-                            <ul>
-                                <li><Icons icon='linkedin' />Linkedin: <span onClick={redirectUser}>@eritaakash <Icons icon='external-link' /></span></li>
-                                <li><Icons icon='github' />GitHub: <span onClick={redirectUser}>/eritaakash <Icons icon='external-link' /></span></li>
-                                <li><Icons icon='mail' />E-mail <span onClick={redirectUser}>eritaakash <Icons icon='external-link'/></span></li>
+                            <ul className={styles.clickableLinksList}>
+                                <li><Icons icon='linkedin' />Linkedin: <span onClick={redirectUser} id='linkedin'>@eritaakash <Icons icon='external-link' /></span></li>
+                                <li><Icons icon='github' />GitHub: <span onClick={redirectUser} id='github'>/eritaakash <Icons icon='external-link' /></span></li>
+                                <li><Icons icon='mail' />E-mail <span onClick={redirectUser} id='email'>eritaakash <Icons icon='external-link'/></span></li>
                             </ul>
                         </>
                     } />

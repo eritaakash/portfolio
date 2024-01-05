@@ -8,6 +8,18 @@
     align-items: center;
     justify-content: center;
 
+    .clickableLinksList {
+        li {
+            span {
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: var(--fg-secondary);
+                }
+            }
+        }
+    }
     .formParent {
         width: 100%;
         display: flex;
