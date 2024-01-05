@@ -42,7 +42,6 @@ const Projects = () => {
                 const repo = project;
 
                 if (!repo.private) {
-                    console.log(repo)
                     updatedRepos.push({
                         name: repo.name,
                         description: repo.description,
@@ -57,9 +56,6 @@ const Projects = () => {
         });
     }, []);
 
-    useEffect(() => {
-        console.log(projects);
-    }, [projects]);
 
     const redirectToProject = (e) => {
         const projectName = e.target.id;
