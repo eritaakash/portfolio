@@ -1,0 +1,22 @@
+.simpleShinyBgContainer {
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    > svg {
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    > section {
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
