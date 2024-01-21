@@ -1,5 +1,5 @@
 .contactContainer {
-    min-height: 100vh;
+    height: auto;
     width: 100%;
     
     background: var(--bg-secondary);
@@ -20,6 +20,7 @@
             }
         }
     }
+    
     .formParent {
         width: 100%;
         display: flex;
@@ -40,6 +41,10 @@
             }
 
             background: linear-gradient(120deg, var(--bg-primary), var(--bg-secondary));
+        }
+
+        section {
+            max-width: 90%;
         }
     }
 

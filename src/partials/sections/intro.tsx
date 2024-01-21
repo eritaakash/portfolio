@@ -15,6 +15,10 @@ const Intro = () => {
                 <p>I'm a full-stack web developer</p>
                 <button onClick={redirect}> <Icons icon='github'/> <p>GitHub</p> <Icons icon='external-link' className={styles.extLink}/> </button>
             </section>
+
+            <p className={styles.copyrightNotice} style={{ fontSize: '0.8rem' }}>
+                &copy; Confetti Doodles Background from <a href="https://www.svgbackgrounds.com/" target="_blank" rel="noreferrer">SVGBackgrounds.com</a>
+            </p>
         </section>
     )
 };

@@ -116,3 +116,21 @@
         }
     }
 }
+
+p.copyrightNotice {
+
+    position: absolute;
+    bottom: 2.5%;
+
+    text-align: center;
+    font-size: 0.8rem;
+
+    a {
+        text-decoration: underline;
+        color: var(--fg-secondary);
+
+        &:visited {
+            color: var(--fg-secondary);
+        }
+    }
+}

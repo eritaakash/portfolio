@@ -19,9 +19,27 @@ const About = () => {
         calculateAge();
     }, []);
 
+    const ServiceCards = (...content) => {
+        return (
+            <>
+                {
+                    content.map((card, index) => {
+                        return (
+                            <section className={styles.serviceCard} key={index}>
+                                {card}
+                            </section>
+                        )
+                    })
+                }
+            </>
+        )
+    }
+
     return (
         <section className={styles.aboutContainer}>
+            
             <section className={styles.about}>
+
                 <h2>About Me</h2>
                 
                 <section className={styles.cardsList}>
@@ -49,7 +67,7 @@ const About = () => {
 
                     <InfoCard content={
                         <>
-                            <h3><Icons icon="user" size={50} /> My Tech Stack</h3>
+                            <h3><Icons icon="bookmark" size={50} /> My Tech Stack</h3>
                             <ul>
                                 <li><Icons icon='monitor' /> Frontend: <span>Next.js</span></li>
                                 <ul>
@@ -65,6 +83,75 @@ const About = () => {
                         </>
                     } />
 
+                    <InfoCard content={
+                        <>
+                            <h3><Icons icon="code" size={50} /> Programming Languages</h3>
+                            <ul>
+                                <li><Icons icon='monitor' /> Frontend: <span>Next.js</span></li>
+                                <ul>
+                                    <li><Icons icon='layout' /> UI: <span>React.js</span></li>
+                                    <li><Icons icon='layers' /> Styling: <span>Sass</span></li>
+                                    <li><Icons icon='feather' /> Icons: <span>Feather</span></li>
+                                </ul>
+                                <li><Icons icon='server' /> Backend: <span>Express</span></li>
+                                <li><Icons icon='database' /> Database: <span>MongoDB</span></li>
+                                <li><Icons icon='activity' /> Runtime: <span>Node.js</span></li>
+                                <li><Icons icon='github' /> Version Control: <span>Git</span></li>
+                            </ul>
+                        </>
+                    } />
+
+                </section>
+
+                <h2 style={{ marginTop: '4.5rem' }}>Services Offered</h2>
+                
+
+                <section className={styles.cardsList}>
+                    {
+                        ServiceCards(
+                            <>
+                                
+                                <h3><Icons icon='server' size={50} className={styles.parentIcon} /> Backend Development</h3>
+                                <p>A server that supports your client-side projects</p>
+
+                                <ul>
+                                    <li><Icons icon='folder' /> Documented and comprehensive project file structure</li>
+                                    <li><Icons icon='check-circle' />TypeScript for type-checking and bug prevention</li>
+                                    <li><Icons icon='package'/> Integration of a backend library & its middlewares</li>
+                                    <li><Icons icon='database' />Database integration for CRUD operations & Data management</li>
+                                    <li><Icons icon='activity' />Usage of WebSockets to provide updated data in real-time</li>
+                                    <li><Icons icon='shield' />Implementing secure user authentication and authorization mechanisms.</li>
+                                </ul>
+                            </>,
+                            <>
+                                
+                                <h3><Icons icon='monitor' size={50} className={styles.parentIcon} /> Frontend Development</h3>
+                                <p>A client-side project built with great detail and care</p>
+
+                                <ul>
+                                    <li><Icons icon='folder' /> Documented and comprehensive project file structure</li>
+                                    <li><Icons icon='check-circle' />Development of given User Interface with great accuracy</li>
+                                    <li><Icons icon='code' />Alternatively, developing an attractive UI from scratch</li>
+                                    <li><Icons icon='package' /> Integration of utility modules (for icons, components, etc.)</li>
+                                    <li><Icons icon='activity' />Usage of WebSockets to provide updated data in real-time</li>
+                                    <li><Icons icon='shield' />Implementing secure user authentication and authorization mechanisms.</li>
+                                </ul>
+                            </>,
+                            <>
+                                
+                                <h3><Icons icon='key' size={50} className={styles.parentIcon} />Maintainance & Other</h3>
+                                <p>Keeping developmental issues away from your projects</p>
+
+                                <ul>
+                                    <li><Icons icon='crosshair' />Bug fixing</li>
+                                    <li><Icons icon='activity' />Regular updates of project's status</li>
+                                    <li><Icons icon='code' />Addition of requested features</li>
+                                </ul>
+                            </>
+                        )
+                    }
+
+                    
                 </section>
             </section>
         </section>
