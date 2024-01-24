@@ -49,14 +49,7 @@ const About = () => {
                             <h3><Icons icon="user" size={50} /> Who am I?</h3>
                             <ul>
                                 <li><Icons icon='gift' /> My age: <span>{age}y</span></li>
-
                                 <li><Icons icon='book' /> Education: <span>Student</span></li>
-                                <ul>
-                                    <li><Icons icon='clock' /> Institution: <span>College</span></li>
-                                    <li><Icons icon='help-circle' /> Stream: <span>Computer Science</span></li>
-                                    <li><Icons icon='clock' /> Duration: <span>3y</span></li>
-                                </ul>
-
                                 <li><Icons icon='navigation' /> Location: <span>India</span></li>
                                 <li><Icons icon='globe' /> Languages: <span>English, Hindi</span></li>
                                 <li><Icons icon='briefcase' /> Career Aspirations: <span>Web Developer</span></li>
@@ -67,32 +60,33 @@ const About = () => {
 
                     <InfoCard content={
                         <>
-                            <h3><Icons icon="bookmark" size={50} /> My Tech Stack</h3>
+                            <h3><Icons icon="code" size={50} /> Learning Experience</h3>
                             <ul>
-                                <li><Icons icon='monitor' /> Frontend: <span>Next.js</span></li>
-                                <ul>
-                                    <li><Icons icon='layout' /> UI: <span>React.js</span></li>
-                                    <li><Icons icon='layers' /> Styling: <span>Sass</span></li>
-                                    <li><Icons icon='feather' /> Icons: <span>Feather</span></li>
-                                </ul>
-                                <li><Icons icon='server' /> Backend: <span>Express</span></li>
-                                <li><Icons icon='database' /> Database: <span>MongoDB</span></li>
-                                <li><Icons icon='activity' /> Runtime: <span>Node.js</span></li>
-                                <li><Icons icon='github' /> Version Control: <span>Git</span></li>
+                                <li><Icons icon='code' /> JS/TS<span>(intermediate)</span></li>
+                                <li><Icons icon='code' /> Python <span>(intermediate)</span></li>
+                                <li><Icons icon='code' /> Golang: <span>(beginner)</span></li>
+                                <div></div>
+                                <div></div>
+                                <li><Icons icon='activity' /> Node.js: <span>(intermediate)</span></li>
+                                <li><Icons icon='monitor' /> React: <span>(intermediate)</span></li>
+                                <li><Icons icon='server' /> Express.js <span>(intermediate)</span></li>
+                                <li><Icons icon='github' /> Git/GitHub <span>(intermediate)</span></li>
                             </ul>
                         </>
                     } />
 
                     <InfoCard content={
                         <>
-                            <h3><Icons icon="code" size={50} /> Programming Languages</h3>
+                            <h3><Icons icon="bookmark" size={50} /> My Tech Stack</h3>
                             <ul>
                                 <li><Icons icon='monitor' /> Frontend: <span>Next.js</span></li>
-                                <ul>
-                                    <li><Icons icon='layout' /> UI: <span>React.js</span></li>
-                                    <li><Icons icon='layers' /> Styling: <span>Sass</span></li>
-                                    <li><Icons icon='feather' /> Icons: <span>Feather</span></li>
-                                </ul>
+                                <li>
+                                    <ul>
+                                        <li><Icons icon='layout' /> UI: <span>React.js</span></li>
+                                        <li><Icons icon='layers' /> Styling: <span>Sass</span></li>
+                                        <li><Icons icon='feather' /> Icons: <span>Feather</span></li>
+                                    </ul>
+                                </li>
                                 <li><Icons icon='server' /> Backend: <span>Express</span></li>
                                 <li><Icons icon='database' /> Database: <span>MongoDB</span></li>
                                 <li><Icons icon='activity' /> Runtime: <span>Node.js</span></li>
