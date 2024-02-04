@@ -24,6 +24,7 @@ const Home = () => {
         <meta name="theme-color" content="#161B33"></meta>
 
         <meta name="description" content="Aakash's Portfolio Website" />
+        <meta name="google-site-verification" content="9NYU1gB8c28GDg17y228l1YpVH3nv_QiLLmafvLDnSw" />
       </Head>
 
       <main>
