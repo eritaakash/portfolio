@@ -1,4 +1,4 @@
-export const skills = [
+export const myStack = [
     {
         title: 'MongoDB',
         icon: '/icons/mongodb-icon.svg'
@@ -35,5 +35,17 @@ export const skills = [
     {
         title: 'Git & GitHub',
         icon: '/icons/git-icon.svg'
+    },
+    {
+        title: 'Tensorflow',
+        icon: '/icons/tensorflow-icon.svg'
+    },
+    {
+        title: 'Python',
+        icon: '/icons/python-icon.svg'
+    },
+    {
+        title: 'OpenAI',
+        icon: '/icons/openai-icon.svg'
     }
 ]
