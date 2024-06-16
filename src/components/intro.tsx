@@ -15,7 +15,7 @@ const Intro = () => {
 
             <div className={styles.imageContainer}>
                 <Image
-                    src="/icons/author.png"
+                    src="/public/icons/author.png"
                     alt="Aakash"
                     width={200}
                     height={200}
