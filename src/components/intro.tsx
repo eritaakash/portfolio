@@ -14,11 +14,9 @@ const Intro = () => {
             </div>
 
             <div className={styles.imageContainer}>
-                <Image
-                    src="/public/icons/author.png"
+                <img
+                    src={'https://avatars.githubusercontent.com/u/144517292?s=400&u=99bbb3e810ad5f4a38685a17384ab4bd26b97df7&v=4'}
                     alt="Aakash"
-                    width={200}
-                    height={200}
                     className={styles.image}
                 />
             </div>
